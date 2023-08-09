@@ -1,45 +1,38 @@
-import React , { FC } from 'react';
+import React, { FC, useState, useEffect } from 'react';
 
 type WrapperProps = {
     children: any;
-  };
-  
+};
+
 const Header: FC<WrapperProps> = ({ children }) => {
-    // getInitialState: function () {
-    //     return {
-    //         window: {
-    //             height: 0,
-    //             width: 0
-    //         }
-    //     };
-    // },
+    const [screenSize, setScreenSize] = useState({
+        height: 0,
+        width: 0
+    });
 
-    // updateDimensions: function () {
-    //     return this.setState({
-    //         window: {
-    //             height: window.innerHeight,
-    //             width: window.innerWidth
-    //         }
-    //     });
-    // },
+    useEffect(() => {
+        const onResize = () => {
+            setScreenSize({
+                height: window.innerHeight,
+                width: window.innerWidth
+            });
+        }
 
-    // componentWillMount: function () {
-    //     this.updateDimensions();
-    // },
+        window.addEventListener("resize", onResize);
+    
+        return () => { window.removeEventListener("resize", onResize); }
+        
+    }, []);
 
-    // componentDidMount: function () {
-    //     return window.addEventListener('resize', this.updateDimensions);
-    // },
 
-    // const style = {
-    //     height: 0 //this.state.window.height
-    // };
-
-    return (
-        <header id='home'  className="flex items-center mb-8 md:mb-11">
-            {children}
-        </header>
-    );
+const style = {
+    height: screenSize.height
+};
+return (
+    <header id='home' style={style}>
+        {children}
+    </header>
+);
 };
 
 export default Header;
