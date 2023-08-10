@@ -83,12 +83,12 @@ export type ResumePublication = {
 export type ResumeSkillDetail = {
   name: string;
   level: string;
-  keywords: BulletPoints;
+  keywords: Renderable[];
 };
 
 export type ResumeSkill = {
   title: string;
-  description: BulletPoints;
+  description: Renderable[]
   skillDetails: ResumeSkillDetail[];
 };
 

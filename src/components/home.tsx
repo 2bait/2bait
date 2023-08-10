@@ -4,7 +4,7 @@ import { Resume as ResumeType } from "../data/types";
 
 //import resumeRequest from 'superagent';
 import Header from './header';
-//import Navigation from './navigation';
+import Navigation from './navigation';
 //import Banner from './banner';
 import ScrollDown from './scrolldown';
 import Footer from './footer';
@@ -31,7 +31,17 @@ const Home: FC<ResumeProps> = ({ resume }) => {
     //         setMessages(messages);
     //     })
     // },[locale]);
-
+    const navigation = {
+            home: 'Home',
+            about: 'About',
+            expertise: 'Expertise',
+            skill: 'Skills',
+            work: 'Work',
+            publication: 'Publications',
+            education: 'Education',
+            // portfolio: 'Portfolio',
+            testimonials: 'References'
+        };
     return resume ? (
         <div>
             {/* <IntlProvider messages={messages} key={locale} locale={locale}>
@@ -39,8 +49,8 @@ const Home: FC<ResumeProps> = ({ resume }) => {
             </IntlProvider> */}
             
              <Header>
-                {/* <Navigation navigation={this.props.route.config.navigation}/>
-                <Banner basics={data.resume.basics}/> */}
+                <Navigation navigation={navigation}/>
+                {/* <Banner basics={data.resume.basics}/> */}
                 <ScrollDown/>
             </Header>
             <About about={resume.about}/>
@@ -52,21 +62,10 @@ const Home: FC<ResumeProps> = ({ resume }) => {
             <PublicationSection publications={resume.publications}/>
             <EducationSection education={resume.education}/>
             <Footer about={resume.about}/>
-            {/* <Expertises content={this.props.expertises}/>
-            
+            {/*             
              <Portfolio content={this.props.portfolio}/> 
-            <References content={this.props.references}/>
-
-            {resume.sections.map((section, sectionIndex) => (
-                <Section
-                    basics={data.resume.basics}
-                    expertises={data.resume.expertises}
-                    work={data.resume.work}
-                    education={data.resume.education}
-                    skills={data.resume.skills}
-                    portfolio={data.resume.projects}
-                    references={data.resume.references}/> 
-            ) */}
+             <References content={this.props.references}/>
+            */}
         </div>
     ):<Loading/>;   //config?.resume ? onLoad() : 
 }

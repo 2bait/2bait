@@ -8,7 +8,7 @@ type ParagraphProps = {
 
 const RenderParagraph: FC<ParagraphProps> = ({ items }) => {
   return (
-    <p className="mt-2.1 text-md text-gray-700 leading-normal">
+    <p>
       {items.map((child, childIndex) => (
         <React.Fragment key={childIndex}>
           <RenderableComponent data={child} />{" "}

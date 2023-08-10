@@ -1,6 +1,6 @@
 import React, { FC } from 'react';
 import { ResumeSkill, ResumeSkillDetail } from "../../data/types";
-import BulletPoints from "../bullet_points";
+import RenderableComponent from "../renderableComponent";
 
 type SkillDetailEntryProps = {
   entry : ResumeSkillDetail;
@@ -64,7 +64,11 @@ const SkillEntry: FC<SkillEntryProps> = ({skillEntry })=>{
         return (
             <div className='row inside'>
                 <h3>{skillEntry.title}</h3>
-                <BulletPoints list={skillEntry.description} />
+                {skillEntry.description &&
+                    skillEntry.description.length > 0 &&
+                    skillEntry.description.map((renderable, renderableIndex) => (
+                        <RenderableComponent key={renderableIndex} data={renderable} />
+                    ))}
                 <div className='bars'>
                     <ul className='skills'>
                         {skillEntry.skillDetails.map(function (entry, index) {

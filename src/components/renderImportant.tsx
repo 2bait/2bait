@@ -6,7 +6,7 @@ type ImportantProps = {
 
 const RenderImportant: FC<ImportantProps> = ({ children }) => {
   return (
-    <span className="font-medium text-gray-600 print:text-black">
+    <span className="font-medium">
       {children}
     </span>
   );

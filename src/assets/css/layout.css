@@ -88,15 +88,6 @@ body {
    margin: 0 auto;
 }
 
-@media (max-width: 480px) {
-   .page-404 {
-       font-size: 25px;
-   }
-
-   .page-404 h2 {
-       font-size: 120px;
-   }
-}
 .header-has-img .page-404 {
    margin-top: 170px;
 }
@@ -331,7 +322,8 @@ ul#nav li.current a {
    color: #11ABB0;
 }
 
-#about h2 {
+#about h2 {  
+   font: 22px/30px 'opensans-bold', sans-serif;
    color: #313131;
    margin-bottom: 12px;
 }
@@ -339,6 +331,7 @@ ul#nav li.current a {
 #about p {
    line-height: 30px;
    color: #7A7A7A;
+   text-align: justify;
 }
 
 #about .profile-pic {
@@ -353,7 +346,7 @@ ul#nav li.current a {
 }
 
 #about .download {
-   padding-top: 16px;
+   padding-top: 20px;
    text-align: center;
    background: #fff;
 }
@@ -618,33 +611,17 @@ strong.fa-quora {
    padding-bottom: 6px;
 }
 
-.expertise-list { list-style: none; padding-left: 20px; counter-reset: ctr 0; }
+.expertise-list { list-style: none; counter-reset: ctr 0; }
 .expertise-list h5 { font: 25px/30px 'opensans-bold', sans-serif; }
 .expertise-item { border-top: 1px solid rgba(255, 255, 255, 0.05); padding-left: 0px; }
 .expertise-item:last-child { border-bottom: 1px solid rgba(255, 255, 255, 0.05); }
 .expertise-item-header { padding-top: 2.4rem; padding-bottom: 2.4rem; padding-right: 6rem; cursor: pointer; position: relative; }
-.expertise-item-header h5 { font-family: "Gothic A1", sans-serif; font-weight: 400; font-size: 3.6rem; padding-left: 1.111em; margin: 0px; position: relative; }
+.expertise-item-header h5 { font-family: "Gothic A1", sans-serif; font-weight: 400; font-size: 2.6rem; padding-left: 1.111em; margin: 0px; position: relative; }
 .expertise-item-header h5::before { content: counter(ctr, decimal-leading-zero) "."; counter-increment: ctr 1; font-family: "Work Sans", sans-serif; font-weight: 600; font-size: 0.5em; line-height: 1; color: #11ABB0; position: absolute; top: 0.5em; left: 0px; }
 .expertise-item-header::after { border-bottom: 2px solid #11ABB0; border-right: 2px solid #11ABB0; content: ""; display: block; height: 6px; width: 6px; margin-top: -6px; pointer-events: none; position: absolute; right: 2.4rem; top: 50%; transform-origin: 66% 66%; transition: all 0s ease 0s, all 0.3s ease 0s; transform: rotate(45deg); }
 .expertise-item-body { padding-top: 1.2rem; padding-left: 4rem; padding-right: 4rem; display: none; }
 .is-active .expertise-item-header::after { transform: rotate(225deg); }
 .is-active .expertise-item-body { display: block; }
-
-@media screen and (max-width: 600px) {
-  .expertise-item-header h5 { font-size: 3.2rem; }
-}
-@media screen and (max-width: 500px) {
-  .expertise-item-header h5 { font-size: 3rem; }
-}
-@media screen and (max-width: 400px) {
-  .s-services .vert-line { left: 24px; }
-  .expertise-item-header h5 { font-size: 2.8rem; }
-}
-
-
-
-
-
 
 /* ------------------------------------------------------------------ */
 /* d. Skill Section
@@ -719,13 +696,13 @@ strong.fa-quora {
    margin: 0 0 10px 0;
 }
 
-.skills,
+.skill,
 .education,
 .work,
-.projects
+.projects,
+.publication
  {
    margin-bottom: 48px;
-   padding-bottom: 24px;
    border-bottom: 1px solid #E8E8E8;
 }
 
@@ -747,32 +724,30 @@ strong.fa-quora {
 
 .bars li {
    position: relative;
-   margin-bottom: 60px;
+   margin-bottom: 40px;
    background: #ccc;
-   height: 20px;
+   height: 12px;
    border-radius: 3px;
 }
 
 .bars li em {
-   font: 15px 'opensans-bold', sans-serif;
-   text-transform: uppercase;
-   letter-spacing: 2px;
+   font: 13px 'opensans-bold', sans-serif;
    font-weight: normal;
-   position: absolute;
-   left: 10px;
-   top:-3rem;
+   text-transform: uppercase;
+   position: relative;
+   top: -35px;
+   display: inline-block;
 }
 
 .bar-expand {
    position: absolute;
    left: 0;
    top: 0;
-
    margin: 0;
    padding-right: 24px;
    background: #313131;
    display: inline-block;
-   height: 20px;
+   height: 12px;
    line-height: 32px;
    border-radius: 3px 0 0 3px;
 }
@@ -1843,3 +1818,27 @@ footer .social-links li:first-child {
     letter-spacing: .15rem !important;
     color: rgba(0, 0, 0, 0.5) !important;
    }
+
+.hire{
+   text-align: center;
+}
+.hire h1 {
+   font-size: 2.9rem;
+}
+
+.hire .button {
+   margin-top: 6px;
+   background: #444;
+   color: #ffff;
+}
+
+
+.hire .button:hover {
+   background: #11ABB0;
+   color: #fff;
+}
+
+.hire .button  i {
+   margin-right: 15px;
+   font-size: 20px;
+}

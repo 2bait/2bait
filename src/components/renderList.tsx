@@ -12,11 +12,8 @@ const RenderList: FC<RenderListProps> = ({ items = [] }) => {
       {items.map((item, itemIndex) => (
         <li
           key={itemIndex}
-          className="mt-2.1 text-md text-gray-700 leading-normal"
-        >
-          <span className="absolute -ml-3 sm:-ml-3.2 select-none transform -translate-y-px">
-            ›
-          </span>
+        >          
+          <span className='bullet-point'>&bull; </span>
           <RenderableComponent data={item} />
         </li>
       ))}

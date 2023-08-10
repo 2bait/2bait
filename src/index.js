@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { Routes, Route, BrowserRouter } from "react-router-dom";
 import './assets/css/default.css';
 import './assets/css/layout.css';
+import './assets/css/media-queries.css';
 //import reportWebVitals from './reportWebVitals';
 //import Main from './components/main';
 import Home from './components/home';

@@ -13,7 +13,6 @@ type PublicationSectionProps = {
 const PublicationEntry: FC<PublicationEntryProps> = ({ entry }) => {
 
     return (
-        <div className='row item'>
             <div className='twelve columns'>
                 <h3>{!entry.titleHref && entry.title}
                     {entry.titleHref && <Link title={entry.title} href={entry.titleHref} className="ml-1" />}</h3>
@@ -26,7 +25,6 @@ const PublicationEntry: FC<PublicationEntryProps> = ({ entry }) => {
                         <RenderableComponent key={renderableIndex} data={renderable} />
                     ))}
             </div>
-        </div>
     );
 };
 

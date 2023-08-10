@@ -30,13 +30,11 @@ const Vcf: FC<VCardProps> = ({ about }) => {
     //vCard.socialUrls['custom'] = 'https://...';
 
 
-    return (        
-        <div>
-            <QRCode size={256}
-                viewBox={`0 0 256 256`}
-                value={vcf.getFormattedString()} /><br/>
-                <a className="button" download={"card.vcf"} href={`data:,${vcf.getFormattedString()}`}>Download VCard</a>
-        </div>
+    return (<>
+        <QRCode size={128}
+            value={vcf.getFormattedString()} /><br />
+        <a className="button" download={"card.vcf"} href={`data:,${vcf.getFormattedString()}`}>Download VCard</a>
+    </>
     );
 };
 

@@ -7,11 +7,11 @@ type HireMeProps = {
 const HireMe: FC<HireMeProps> = ({caption}) =>{
         return (
             <div className='row hire'>
-                <div className='seven columns'>
+                <div className='twelve columns'>
                     <h1 className='hire-text'>
                         {caption}
                     </h1>
-                    <a href='#Social' className='button stroke smoothscroll'>Hire Me</a>
+                    <a href='#Social' className='button'>Hire Me</a>
                 </div>
             </div>
         );
