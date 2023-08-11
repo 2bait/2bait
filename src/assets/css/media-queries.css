@@ -47,10 +47,10 @@
    }
 
    /* nav-wrap */
-   #nav-wrap {
+   /*TODO #nav-wrap {
       font: 11px 'opensans-bold', sans-serif;
       letter-spacing: 1.5px;
-   }
+   } */
 
 
    /* About Section
@@ -189,7 +189,7 @@
 
    /* mobile navigation
    -------------------------------------------------------------------- */
-   #nav-wrap {
+    #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
       background: transparent !important;
       letter-spacing: 1.5px;
@@ -197,9 +197,9 @@
       position: fixed;
       top: 0;
       right: 0;
-   }
+   } 
 
-   #nav-wrap>a {
+    #nav-wrap>a {
       width: 48px;
       height: 48px;
       text-align: left;
@@ -215,8 +215,7 @@
       position: relative;
       top: 0px;
       right: 30px;
-   }
-
+   } 
    #nav-wrap>a:before,
    #nav-wrap>a:after {
       position: absolute;
@@ -225,20 +224,20 @@
       left: 25%;
       right: 25%;
       content: '';
-   }
+   } 
 
    #nav-wrap>a:after {
       top: 60%;
-   }
+   } 
 
    /* toggle buttons */
    #nav-wrap:not( :target)>a:first-of-type,
    #nav-wrap:target>a:last-of-type {
       display: block;
-   }
+   } 
 
    /* hide menu panel */
-   #nav-wrap ul#nav {
+   ul#nav.close   {
       height: auto;
       display: none;
       clear: both;
@@ -248,16 +247,16 @@
       position: relative;
       top: 12px;
       right: 0;
-   }
+   } 
 
    /* display menu panels */
-   #nav-wrap:target>ul#nav {
+   ul#nav {
       display: block;
       padding: 30px 20px 48px 20px;
       background: #1f2024;
       margin: 0 30px;
       clear: both;
-   }
+   } 
 
    ul#nav li {
       display: block;
@@ -267,17 +266,16 @@
       text-align: left;
       border-bottom: 1px solid #2D2E34;
       border-bottom-style: dotted;
-   }
+   } 
 
-   ul#nav li a {
+ ul#nav li a {
       display: block;
       margin: 0;
       padding: 0;
       margin: 12px 0;
       line-height: 16px;
-      /* reset line-height from 48px */
       border: none;
-   }
+   } 
 
 
    /* Header Styles
@@ -536,10 +534,10 @@
 
    /* mobile navigation
    -------------------------------------------------------------------- */
-   #nav-wrap ul#nav {
+   /*TODO #nav-wrap ul#nav {
       width: auto;
       float: none;
-   }
+   } */
 
    /* header styles
    -------------------------------------------------------------------- */
