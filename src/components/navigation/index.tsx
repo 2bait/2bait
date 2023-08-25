@@ -8,18 +8,19 @@ type NavigationProps = {
 const Navigation: FC<NavigationProps> = ({ navigation }) => {
     const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
 
+    console.log(navigationOpen)
     const toggleNavigation = () => {
-        setNavigationOpen(!navigationOpen);
+        setNavigationOpen((navigationOpen) => !navigationOpen);
     };
     return (
         <nav id='nav-wrap' className='opaque'>
             <button
                 className="mobile-btn"
-                onClick={() => setNavigationOpen((navigationOpen) => !navigationOpen)}
+                onClick={toggleNavigation}
             >
-                {navigationOpen ? 'close' : 'open'}
+                {navigationOpen ? 'open' : 'close'}
             </button>
-            <ul id='nav' className={navigationOpen ? 'nav close' : 'nav'}>
+            <ul id='nav' className={navigationOpen ? 'nav open' : 'nav'}>
                 {Object.keys(navigation).map((key, index) => {
                     const navigationName = navigation[key as keyof typeof navigation];
                     return (

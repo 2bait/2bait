@@ -27,7 +27,7 @@ const about: ResumeAbout = {
   profiles: [{
     network: "Github",
     username: "borutajdic",
-    url: "",
+    url: "https://github.com/2bait",
   },{
     network: "Email",
     username: "borutajdic",

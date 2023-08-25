@@ -191,31 +191,23 @@
    -------------------------------------------------------------------- */
     #nav-wrap {
       font: 12px 'opensans-bold', sans-serif;
-      background: transparent !important;
       letter-spacing: 1.5px;
       width: auto;
       position: fixed;
       top: 0;
-      right: 0;
+      right: 0;    
    } 
 
     #nav-wrap>button {
       width: 48px;
       height: 48px;
-      text-align: left;
-      background-color: #CC5200;
-      position: relative;
-      border: none;
       float: right;
-
-      font: 0/0 a;
-      text-shadow: none;
       color: transparent;
-
       position: relative;
-      top: 0px;
-      right: 30px;
-      display: inline;
+      display: block;
+      background: transparent;
+      z-index: 2;
+      margin-bottom: 0px;
    } 
    #nav-wrap>button:before,
    #nav-wrap>button:after {
@@ -238,7 +230,7 @@
    }  */
 
    /* hide menu panel */
-   ul#nav.close   {
+   ul#nav   {
       height: auto;
       display: none;
       clear: both;
@@ -246,17 +238,17 @@
       float: right;
 
       position: relative;
-      top: 12px;
       right: 0;
    } 
 
    /* display menu panels */
-   ul#nav {
+   ul#nav.open {
       display: block;
+      position: absolute;
       padding: 30px 20px 48px 20px;
       background: #1f2024;
-      margin: 0 30px;
       clear: both;
+      width: 100%;
    } 
 
    ul#nav li {
@@ -555,6 +547,36 @@
       font: 14px/1.9em 'librebaskerville-regular', sans-serif;
       width: 90%;
    }
+
+
+   .banner-content, .banner-img {
+      text-align: center;
+    }
+
+    @media (max-width: 1500px) {
+      .banner-content h2 {
+        font-size: 44px;
+        line-height: 1.1;
+        margin-bottom: 30px;
+        text-transform: capitalize;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .banner-img {
+        margin-bottom: 40px;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .banner-content, .banner-img {
+        text-align: center;
+      }
+    }
+    @media (max-width: 991.98px) {
+      .banner-img {
+        margin-bottom: 50px;
+      }
+    }
 
    /* header social links */
    header .social {

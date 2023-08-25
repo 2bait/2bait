@@ -3,7 +3,9 @@
 [![Website](https://img.shields.io/website-up-down-green-red/http/2bait.github.io.svg)](https://2bait.github.io)
 [![license](https://img.shields.io/github/license/2bait/2bait.github.io.svg)](https://github.com/borutajdic/2bait/2bait.github.io/blob/master/LICENSE)
 
-[`2bait.github.io`](https://2bait.github.io) is a static single-page application resumer-builder developed using React.js. It follows a customized version of the [JSON Resume schema](https://jsonresume.org/schema/) to store a Curriculum Vitae in JSON format.
+[`2bait.github.io`](https://2bait.github.io) is a static single-page application developed using React.js. It follows a customized version of the [JSON Resume schema](https://jsonresume.org/schema/) to store a Curriculum Vitae in JSON format.
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/69a941a3-02d6-4af9-a462-b63a6269f151/deploy-status)](https://app.netlify.com/sites/2bait/deploys)
 
 ## Installation
 
@@ -13,13 +15,13 @@ yarn
 
 ## Usage
 
-You can view the live site at [2bait.si](https://2bait.si)
+You can view the live site at [2bait.si](https://2bait.si) or [netlify](https://2bait.netlify.app/).
 
 ## Available Scripts
 
 In the project directory, you can run:
 
-### `npm start`
+### `yarn start`
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
@@ -27,12 +29,12 @@ Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
-### `npm test`
+### `yarn test`
 
 Launches the test runner in the interactive watch mode.\
 See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### `yarn build`
 
 Builds the app for production to the `build` folder.\
 It correctly bundles React in production mode and optimizes the build for the best performance.
@@ -42,7 +44,7 @@ Your app is ready to be deployed!
 
 See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### `yarn eject`
 
 **Note: this is a one-way operation. Once you `eject`, you can't go back!**
 

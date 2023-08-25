@@ -17,12 +17,12 @@ const Footer: FC<FooterProps> = ({about}) => {
                             <li>
                                 This site is developed in React.js by&nbsp;
                                 <a
-                                    href='https://2bait.github.io'
+                                    href='https://github.com/2bait'
                                     title='Borut Ajdič'
                                     target='_blank'
                                     rel='noopener noreferrer'>
-                                    Borut Ajdič 2023
-                                </a>
+                                    © 2023 Borut Ajdič
+                                </a>. All rights reserved.
                             </li>
                         </ul>
                     </div>

@@ -452,6 +452,9 @@ e. Others
  
  img {
     max-width: 100%;
+    transition: all 0.4s ease-out 0s;    
+   vertical-align: middle;
+   border-style: none;
     height: auto;
  }
  img.pull-right { margin: 12px 0px 0px 18px; }

@@ -3,12 +3,19 @@ import { ResumeSkill } from "../types";
 const skills: ResumeSkill[] = [
     {
         "title": "Industry Knowledge",
-        "description": [
+        "description": [            
+            {
+                type: "paragraph",
+                items: [
+                    "In-depth knowledge in digitalization of all processes in manufacturing companies.",                    
+                    "",
+                ],
+            }
         ],
         "skillDetails": [
             {
                 "name": "Digital Transformation",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
                 "keywords": [{
                     type: "pills",
                     items: [
@@ -16,45 +23,85 @@ const skills: ResumeSkill[] = [
                     ],
                   }]
             },{
+                "name": "UPRO",
+                "level": "100",
+                "keywords": []
+            },{
+                "name": "Vienna Advantage",
+                "level": "100",
+                "keywords": []
+            },{
+                "name": "SAP",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Oracle",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Microsoft Dynamics",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Infor M3",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Odoo",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Epicor",
+                "level": "0",
+                "keywords": []
+            },{
                 "name": "IT Cost/Benefit Analysis",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "KPI Reporting",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             },{
                 "name": "MRP",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
+                "keywords": []
+            },{
+                "name": "MSP",
+                "level": "100",
                 "keywords": []
             },{
                 "name": "WMS",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
+                "keywords": []
+            },{
+                "name": "PLM",
+                "level": "90",
                 "keywords": []
             },{
                 "name": "Microservices",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "API Integration",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "Google Certified Project Management",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "Scrum / Agile",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "Jira / Atlassian",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }
         ]
     }, {
-        "title": "Programming Languages",
+        "title": "I code in",
         "description": [
             {
                 type: "paragraph",
@@ -68,40 +115,52 @@ const skills: ResumeSkill[] = [
         "skillDetails": [
             {
                 "name": "C# (16 years)",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
                 "keywords": []
             }, {
                 "name": "Delphi (6 years)",
-                "level": "<SKILL_LEVEL>",
+                "level": "90",
                 "keywords": []
-            }, {
+            },{
+                "name": "JSON / XML",
+                "level": "100",
+                "keywords": []
+            },{
+                "name": "Java",
+                "level": "80",
+                "keywords": []
+            },{
+                "name": "Python",
+                "level": "80",
+                "keywords": []
+            },{
                 "name": "Typescript",
-                "level": "<SKILL_LEVEL>",
+                "level": "80",
                 "keywords": []
             }, {
                 "name": "JavaScript",
-                "level": "<SKILL_LEVEL>",
+                "level": "80",
                 "keywords": []
-            }, {
-                "name": "JSON / XML",
-                "level": "<SKILL_LEVEL>",
+            } , {
+                "name": "JQuery",
+                "level": "0",
                 "keywords": []
-            }, {
+            } , {
                 "name": "HTML/5",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "NodeJS / Express",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }, {
                 "name": "CSS/3 (+ SASS)",
-                "level": "<SKILL_LEVEL>",
+                "level": "0",
                 "keywords": []
             }
         ]
     }, {
-        "title": "Database Systems",
+        "title": "I store data in",
         "description": [
             {
                 type: "paragraph",
@@ -113,36 +172,72 @@ const skills: ResumeSkill[] = [
         "skillDetails": [
             {
                 "name": "MS SQL (16 years)",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
                 "keywords": []
             }, {
                 "name": "Firebird (6 years)",
-                "level": "<SKILL_LEVEL>",
+                "level": "100",
                 "keywords": []
             }, {
                 "name": "MongoDB",
-                "level": "<SKILL_LEVEL>",
+                "level": "90",
                 "keywords": []
             }, {
                 "name": "MySQL",
-                "level": "<SKILL_LEVEL>",
+                "level": "90",
                 "keywords": []
             }, {
                 "name": "Postgress",
-                "level": "<SKILL_LEVEL>",
+                "level": "90",
                 "keywords": []
             }
         ]
     }, {
-        "title": "Tools and Software",
+        "title":"I control the versions with",
+        "description": [
+        ],
+        "skillDetails": [{
+            "name": "GIT",
+            "level": "0",
+            "keywords": []
+        },{
+            "name": "Github / Gitlab",
+            "level": "0",
+            "keywords": []
+        },{
+            "name": "SVN",
+            "level": "0",
+            "keywords": []
+        }]
+    },{
+        "title":"I write with",
         "description": [
         ],
         "skillDetails": [
             {
-                "name": "GIT / Github / Gitlab",
-                "level": "<SKILL_LEVEL>",
+                "name": "VS Code",
+                "level": "0",
                 "keywords": []
             }, {
+                "name": "Visual Studio",
+                "level": "0",
+                "keywords": []
+            }, {
+                "name": "Powerbuilder",
+                "level": "0",
+                "keywords": []
+            }, {
+                "name": "Delphi",
+                "level": "0",
+                "keywords": []
+            },
+        ]
+    },{
+        "title":"Going to cloud with",
+        "description": [
+        ],
+        "skillDetails": [
+            {
                 "name": "Docker",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
@@ -151,18 +246,18 @@ const skills: ResumeSkill[] = [
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }, {
-                "name": "CLI",
-                "level": "<SKILL_LEVEL>",
-                "keywords": []
-            }, {
                 "name": "CI / CD",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
-            }, {
-                "name": "RabbitMQ",
-                "level": "<SKILL_LEVEL>",
-                "keywords": []
-            }, {
+            },
+        ]
+    },
+    {
+        "title":"To make sure things dont crush, i use",
+        "description": [
+        ],
+        "skillDetails": [
+            {
                 "name": "Elasticsearch",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
@@ -170,44 +265,67 @@ const skills: ResumeSkill[] = [
                 "name": "Grafana",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
-            }, {
-                "name": "VS Code",
+            }, 
+            {
+                "name": "Postman",
+                "level": "<SKILL_LEVEL>",
+                "keywords": []
+            }
+        ]
+    },
+    
+    {
+        "title":"I talk better with",
+        "description": [
+        ],
+        "skillDetails": [
+            {
+                "name": "CLI",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }, {
-                "name": "Visual Studio",
+                "name": "SSH",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }, {
-                "name": "Powerbuilder",
+                "name": "Terminal",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }, {
-                "name": "Delphi",
-                "level": "<SKILL_LEVEL>",
+                "name": "Microsoft OS",
+                "level": "90",
                 "keywords": []
             }, {
-                "name": "Figma",
-                "level": "<SKILL_LEVEL>",
+                "name": "Linux OS",
+                "level": "80",
                 "keywords": []
             }, {
                 "name": "Microsoft Teams",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
-            }, {
-                "name": "Postman",
-                "level": "<SKILL_LEVEL>",
-                "keywords": []
-            }, {
+            },{
                 "name": "Modern Browsers (default: Chrome)",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
-            }, {
-                "name": "Microsoft OS",
+            }
+        ]
+    },
+    
+    {
+        "title": "Other Tools and Software",
+        "description": [
+        ],
+        "skillDetails": [
+              {
+                "name": "RabbitMQ",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }, {
-                "name": "Linux OS",
+                "name": "Redis",
+                "level": "<SKILL_LEVEL>",
+                "keywords": []
+            }, {
+                "name": "Figma",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }

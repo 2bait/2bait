@@ -19,20 +19,21 @@ const Header: FC<WrapperProps> = ({ children }) => {
         }
 
         window.addEventListener("resize", onResize);
-    
+
         return () => { window.removeEventListener("resize", onResize); }
-        
+
     }, []);
 
 
-const style = {
-    height: screenSize.height
-};
-return (
-    <header id='home' style={style}>
-        {children}
-    </header>
-);
+    const style = {
+        height: screenSize.height
+    };
+    return (
+        
+        <header id='home' style={style} >
+            {children}
+        </header>
+    );
 };
 
 export default Header;
