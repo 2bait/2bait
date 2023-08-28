@@ -18,7 +18,7 @@ import PublicationSection from './sections/publication';
 import SkillsSection from './sections/skills';
 import Loading from './loading';
 import HireMe from './hireme'
-
+import Contact from './contact'
 type ResumeProps = {
     resume: ResumeType;
 };
@@ -42,7 +42,8 @@ const Home: FC<ResumeProps> = ({ resume }) => {
         publication: 'Publications',
         //education: 'Education',
         // portfolio: 'Portfolio',
-        testimonials: 'References'
+        //testimonials: 'References',
+        contact: 'Contact'
     };
     return resume ? (
         <div>
@@ -64,6 +65,7 @@ const Home: FC<ResumeProps> = ({ resume }) => {
             {/* <ExperiencesSection experiences={resume.experiences}/> */}
             <PublicationSection publications={resume.publications} />
             {/* <EducationSection education={resume.education}/> */}
+            <Contact/>
             <Footer about={resume.about} />
             {/*             
              <Portfolio content={this.props.portfolio}/> 

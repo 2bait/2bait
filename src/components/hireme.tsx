@@ -11,7 +11,7 @@ const HireMe: FC<HireMeProps> = ({caption}) =>{
                     <h1 className='hire-text'>
                         {caption}
                     </h1>
-                    <a href='#Social' className='button'>Hire Me</a>
+                    <a href='#contact' className='button'>Hire Me<span></span></a>
                 </div>
             </div>
         );

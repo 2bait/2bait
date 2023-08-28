@@ -1573,7 +1573,6 @@ strong.fa-quora {
  /* ------------------------------------------------------------------ */
 
 #contact {
-   background: #191919;
    padding-top: 96px;
    padding-bottom: 102px;
    color: #636363;
@@ -1637,21 +1636,13 @@ strong.fa-quora {
    margin-bottom: 30px;
 }
 
-#contact label {
-   font: 15px/24px 'opensans-bold', sans-serif;
-   margin: 12px 0;
-   color: #EBEEEE;
-   display: inline-block;
-   float: left;
-   width: 26%;
-}
 
 #contact input,
 #contact textarea,
 #contact select {
    padding: 18px 20px;
-   color: #eee;
-   background: #373233;
+   color: #373233;
+   background: #fff;
    margin-bottom: 42px;
    border: 0;
    outline: none;
@@ -1659,7 +1650,17 @@ strong.fa-quora {
    line-height: 24px;
    width: 65%;
 }
-
+#contact input{
+background-color: #fafafa;
+  border: 1px solid #a9a9a9;
+  box-sizing: border-box;
+  color: #000;
+  height: 46px;
+  padding: 10px;
+  position: relative;
+  margin-bottom: 0px;
+  width: 100%;
+}
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
@@ -1887,24 +1888,6 @@ footer .social-links li:first-child {
 .hire h1 {
    font-size: 2.9rem;
 }
-
-.hire .button {
-   margin-top: 6px;
-   background: #444;
-   color: #ffff;
-}
-
-
-.hire .button:hover {
-   background: #11ABB0;
-   color: #fff;
-}
-
-.hire .button i {
-   margin-right: 15px;
-   font-size: 20px;
-}
-
 
 .ribbon-tag {
    display: inline-block;
