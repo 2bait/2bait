@@ -8,7 +8,7 @@ const Contact: FC<ContactProps> = () => {
     return (
 
         <div id="contact" className="row form-wrapper">
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete='on' className="react-form-contents">
+            <form name="contact" action="/contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete='on' className="react-form-contents">
                 <input type="hidden" name="form-name" value="contact" />
                 <div className="field-list"><fieldset className="form-item fields form-fieldset name" id="name-yui_3_17_2_1_1653409543210_4368">
                     <legend className="title">
