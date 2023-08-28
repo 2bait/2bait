@@ -1,6 +1,4 @@
 import React, { FC } from 'react';
-import SocialMedia from './social_media';
-import { ResumeAbout } from "../data/types";
 
 type ContactProps = {
 };
