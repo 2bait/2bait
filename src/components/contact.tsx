@@ -8,8 +8,7 @@ const Contact: FC<ContactProps> = () => {
     return (
 
         <div id="contact" className="row form-wrapper">
-            <form name="contact" action="/contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete='on' className="react-form-contents">
-                <input type="hidden" name="form-name" value="contact" />
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete='on' className="react-form-contents">
                 <div className="field-list"><fieldset className="form-item fields form-fieldset name" id="name-yui_3_17_2_1_1653409543210_4368">
                     <legend className="title">
                         <div className="pDrrGovH4WPE4ap28zXo"><span>Name</span><span className="description required">(required)</span>
@@ -21,7 +20,7 @@ const Contact: FC<ContactProps> = () => {
                             </div>
                         </div>
                     </label>
-                        <input aria-invalid="false" aria-required="true" autoComplete="given-name" className="form-input" id="first-name" name="fname" type="text" />
+                        <input aria-invalid="false" aria-required="true" autoComplete="given-name" className="form-input" id="first-name" name="first-name" type="text" />
                     </div>
                     <div className="field last-name" data-dynamic-strings=""><label className="form-label caption" htmlFor="last-name">
                         <div className="field-1">
@@ -29,7 +28,7 @@ const Contact: FC<ContactProps> = () => {
                             </div>
                         </div>
                     </label>
-                        <input aria-invalid="false" aria-required="true" autoComplete="family-name" className="form-input" id="last-name" name="lname" type="text" />
+                        <input aria-invalid="false" aria-required="true" autoComplete="family-name" className="form-input" id="last-name" name="last-name" type="text" />
                     </div>
                 </fieldset>
                     <div className="form-item field text required" id="text-f61d2580-1531-4cb0-bb6f-f2e546c647c1" data-dynamic-strings="">
@@ -39,7 +38,7 @@ const Contact: FC<ContactProps> = () => {
                                 </div>
                             </div>
                         </label>
-                        <input aria-invalid="false" aria-required="true" autoComplete="false" className="form-input" id="" placeholder="" type="text" />
+                        <input aria-invalid="false" aria-required="true" autoComplete="false" className="form-input" id="title" name="title" placeholder="" type="text" />
                     </div>
                     <div className="form-item field text required" id="text-c7d4fff1-3262-4860-a673-ef2221ccff5e" data-dynamic-strings="">
                         <label htmlFor="organization" className="title">
@@ -88,7 +87,7 @@ const Contact: FC<ContactProps> = () => {
                             </div>
                         </label>
                         <p aria-label="Tell us more!" className="description">Tell us more!</p>
-                        <textarea id="" aria-invalid="false" className="" placeholder=""></textarea>
+                        <textarea id="message" name="message" aria-invalid="false" className="" placeholder=""></textarea>
                     </div>
                 </div>
                 <div className="form-button-wrapper form-button-wrapper--align-">
