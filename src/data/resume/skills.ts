@@ -212,6 +212,12 @@ const skills: ResumeSkill[] = [
     },{
         "title":"I write with",
         "description": [
+            {
+                type: "paragraph",
+                items: [
+                    "When all you have is a hammer, every problem looks like a nail."
+                ],
+            }   
         ],
         "skillDetails": [
             {

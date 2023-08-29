@@ -69,15 +69,34 @@ const Contact: FC<ContactProps> = () => {
                             </div>
                             <p className="description">Check all areas of interest</p>
                         </legend>
+
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
                                 <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-1" type="checkbox" />
-                                Book Michelle as a speaker for a conference, a team retreat or workshop
+                                Book 2bait as a Project manager - collaborating with other vendors do delivery and test on field new ERP products.
                             </label>
                         </div>
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
                                 <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-2" type="checkbox" />
+                                Engage 2bait for Consultation - Analyzing data, Processes and ERP Systems to identify and resolve issues.
+                            </label>
+                        </div>
+                        <div className="option">
+                            <label className="qGAklBFFTuSX3STwNfpc">
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-3" type="checkbox" />
+                                Fullstack Developer - Develop, Maintain, and Optimize code for existing and new features.
+                            </label>
+                        </div>
+                        <div className="option">
+                            <label className="qGAklBFFTuSX3STwNfpc">
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-4" type="checkbox" />
+                                You are thinking in something more complex - Elaboration and presentation of technical and financial proposals for ERP products tailored to the client.
+                            </label>
+                        </div>
+                        <div className="option">
+                            <label className="qGAklBFFTuSX3STwNfpc">
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-10" type="checkbox" />
                                 Other
                             </label>
                         </div>
