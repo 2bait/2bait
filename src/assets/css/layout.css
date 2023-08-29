@@ -144,15 +144,15 @@ body {
    -webkit-background-size: contain !important;
    width: 100%;
    height: 400px;
-   top:0;
+   top: 0;
 }
 
-#home .banner{   
+#home .banner {
    position: absolute;
-   bottom:80px;
-  background-color: white;
-  width: 100%;
-  max-width: none;
+   bottom: 80px;
+   background-color: white;
+   width: 100%;
+   max-width: none;
 }
 
 
@@ -162,7 +162,7 @@ body {
    line-height: 1.1;
    margin-bottom: 20px;
    text-transform: capitalize;
- }
+}
 
 /* header social links */
 #home .social {
@@ -298,6 +298,7 @@ ul#nav li a:active {
 ul#nav li.current a {
    color: #F06000;
 }
+
 
 /* ------------------------------------------------------------------ */
 /* c. About Section
@@ -1539,7 +1540,6 @@ strong.fa-quora {
    margin: 0 6px;
    display: inline-block;
    zoom: 1;
-   *display: inline;
 }
 
 .flex-control-paging li a {
@@ -1632,35 +1632,53 @@ strong.fa-quora {
 
 
 /* contact form */
+
 #contact form {
    margin-bottom: 30px;
 }
 
+#contact input,textarea {
+   background-color: #fafafa;
+   border: 1px solid #a9a9a9;
+   box-sizing: border-box;
+   color: #000;
+   height: 46px;
+   padding: 10px;
+   position: relative;
+   margin-bottom: 0px;
+   width: 100%;
+}
+#contact  p {
+   margin: 0 0 4px;
+}
 
-#contact input,
-#contact textarea,
-#contact select {
-   padding: 18px 20px;
-   color: #373233;
-   background: #fff;
-   margin-bottom: 42px;
-   border: 0;
-   outline: none;
-   font-size: 15px;
-   line-height: 24px;
-   width: 65%;
+#contact .option label {
+   align-items: center;
+   box-sizing: border-box;
+   display: inline-flex;
+   cursor: pointer;
+   column-gap: 6px;
+   text-rendering: optimizelegibility;
+   margin: 6px 0 4px;
+   font-size: 13px;
 }
-#contact input{
-background-color: #fafafa;
-  border: 1px solid #a9a9a9;
-  box-sizing: border-box;
-  color: #000;
-  height: 46px;
-  padding: 10px;
-  position: relative;
-  margin-bottom: 0px;
-  width: 100%;
+
+#contact .option input {
+   width: 16px;
 }
+
+#contact .caption-text {   
+   font-size: 12px;
+}
+
+#contact  .description {
+   padding: 0.5em 0 0.5em;
+   font-size: 12px;
+   opacity: .7;
+   display: block;
+   white-space: pre-wrap;
+}
+
 #contact input:focus,
 #contact textarea:focus,
 #contact select:focus {
@@ -1686,10 +1704,27 @@ background-color: #fafafa;
    background: #fff;
 }
 
+
+
+#contact .title div {
+   align-items: center;
+    column-gap: 1ex;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 16px;
+}
+
 #contact span.required {
    color: #11ABB0;
    font-size: 13px;
+   align-items: center;
+   column-gap: 1ex;
+   display: flex;
+   flex-wrap: wrap;
 }
+
+
+
 
 #message-warning,
 #message-success {

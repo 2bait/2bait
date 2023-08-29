@@ -461,11 +461,6 @@
    }
 
    /* form */
-   #contact label {
-      float: none;
-      width: 100%;
-   }
-
    #contact input,
    #contact textarea,
    #contact select {
