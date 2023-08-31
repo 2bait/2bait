@@ -112,8 +112,7 @@ const Contact: FC<ContactProps> = () => {
                         <textarea id="message" name="message" aria-invalid="false" className="" placeholder="" required={true}></textarea>
                     </div>
                 </div>
-                <div className="form-button-wrapper form-button-wrapper--align-">
-                    <div data-netlify-recaptcha="true"></div>
+                <div className="form-button-wrapper">
                     <button type="submit" className="button">Send</button>
                 </div>
             </form>

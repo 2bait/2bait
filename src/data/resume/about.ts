@@ -35,7 +35,7 @@ const about: ResumeAbout = {
   },{
     network: "LinkedIn",
     username: "borutajdic",
-    url: ""
+    url: "https://www.linkedin.com/in/borutajdic"
   }]
 };
 

@@ -1699,11 +1699,9 @@ strong.fa-quora {
    margin-left: 26%;
 }
 
-#contact button.submit:hover {
-   color: #0D0D0D;
-   background: #fff;
+#contact button {
+  margin-top: 20px;
 }
-
 
 
 #contact .title div {
