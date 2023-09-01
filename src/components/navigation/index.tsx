@@ -8,7 +8,6 @@ type NavigationProps = {
 const Navigation: FC<NavigationProps> = ({ navigation }) => {
     const [navigationOpen, setNavigationOpen] = useState<boolean>(false);
 
-    console.log(navigationOpen)
     const toggleNavigation = () => {
         setNavigationOpen((navigationOpen) => !navigationOpen);
     };

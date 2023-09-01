@@ -11,6 +11,12 @@ const Contact: FC<ContactProps> = () => {
             <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
                 data-netlify-recaptcha="true" autoComplete='on' className="react-form-contents">
                 <input type="hidden" name="form-name" value="contact" />
+                <div>
+                    <label htmlFor="bot-field">
+                        Don&apos;t fill this out if you&apos;re human:
+                    <input name="bot-field" />
+                    </label>
+                </div>
                 <div className="field-list"><fieldset className="form-item fields form-fieldset name" id="name-yui_3_17_2_1_1653409543210_4368">
                     <legend className="title">
                         <div className="pDrrGovH4WPE4ap28zXo">
@@ -72,31 +78,31 @@ const Contact: FC<ContactProps> = () => {
 
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
-                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-1" type="checkbox" />
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-1" id="checkbox-interest-1" type="checkbox" />
                                 Book 2bait as a Project manager - collaborating with other vendors do delivery and test on field new ERP products.
                             </label>
                         </div>
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
-                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-2" type="checkbox" />
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-2" id="checkbox-interest-2" type="checkbox" />
                                 Engage 2bait for Consultation - Analyzing data, Processes and ERP Systems to identify and resolve issues.
                             </label>
                         </div>
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
-                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-3" type="checkbox" />
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-3" id="checkbox-interest-3" type="checkbox" />
                                 Fullstack Developer - Develop, Maintain, and Optimize code for existing and new features.
                             </label>
                         </div>
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
-                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-4" type="checkbox" />
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-4" id="checkbox-interest-4" type="checkbox" />
                                 You are thinking in something more complex - Elaboration and presentation of technical and financial proposals for ERP products tailored to the client.
                             </label>
                         </div>
                         <div className="option">
                             <label className="qGAklBFFTuSX3STwNfpc">
-                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-10" type="checkbox" />
+                                <input className="XxADG6E7bVECCxE_Md1x" name="checkbox-interest-other" id="checkbox-interest-other" type="checkbox" />
                                 Other
                             </label>
                         </div>

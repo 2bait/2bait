@@ -30,11 +30,20 @@
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <form name="contact" netlify netlify-honeypot="bot-field" 
     data-netlify-recaptcha="true" hidden>
+    <label htmlFor="bot-field">
+      Don&apos;t fill this out if you&apos;re human:
+      <input name="bot-field" />
+    </label>
       <input type="text"  name="first-name">
       <input type="text" name="last-name">
       <input type="text" name="title">
       <input type="text" name="organization">
-      <input type="email" name="email">
+      <input type="email" name="email">      
+      <input type="checkbox" name="checkbox-interest-1">
+      <input type="checkbox" name="checkbox-interest-2">
+      <input type="checkbox" name="checkbox-interest-3">
+      <input type="checkbox" name="checkbox-interest-4">
+      <input type="checkbox" name="checkbox-interest-other">
       <textarea name="message"></textarea>
  </form>
     <div id="root"></div>
