@@ -8,15 +8,14 @@ const Contact: FC<ContactProps> = () => {
     return (
 
         <div id="contact" className="row form-wrapper">
-            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field"
-                data-netlify-recaptcha="true" autoComplete='on' className="react-form-contents">
+            <form name="contact" method="post" data-netlify="true" data-netlify-honeypot="bot-field" autoComplete='on' className="react-form-contents">
                 <input type="hidden" name="form-name" value="contact" />
-                <div>
+                {/* <div>
                     <label htmlFor="bot-field">
                         Don&apos;t fill this out if you&apos;re human:
                     <input name="bot-field" />
                     </label>
-                </div>
+                </div> */}
                 <div className="field-list"><fieldset className="form-item fields form-fieldset name" id="name-yui_3_17_2_1_1653409543210_4368">
                     <legend className="title">
                         <div className="pDrrGovH4WPE4ap28zXo">
