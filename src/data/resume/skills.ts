@@ -87,6 +87,10 @@ const skills: ResumeSkill[] = [
                 "level": "0",
                 "keywords": []
             }, {
+                "name": "ETL Tools",
+                "level": "90",
+                "keywords": []
+            }, {
                 "name": "Google Certified Project Management",
                 "level": "0",
                 "keywords": []
@@ -255,7 +259,15 @@ const skills: ResumeSkill[] = [
                 "name": "CI / CD",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
-            },
+            },{
+                "name": "Microsoft 365",
+                "level": "<SKILL_LEVEL>",
+                "keywords": []
+            },{
+                "name": "Netlify",
+                "level": "<SKILL_LEVEL>",
+                "keywords": []
+            }
         ]
     },
     {
@@ -332,6 +344,10 @@ const skills: ResumeSkill[] = [
                 "keywords": []
             }, {
                 "name": "Figma",
+                "level": "<SKILL_LEVEL>",
+                "keywords": []
+            }, {
+                "name": "MS Visio",
                 "level": "<SKILL_LEVEL>",
                 "keywords": []
             }
