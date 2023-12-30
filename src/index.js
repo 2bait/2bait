@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { Routes, Route, BrowserRouter } from "react-router-dom";
+import { Routes, Route,Navigate, BrowserRouter } from "react-router-dom";
 import './assets/css/default.css';
 import './assets/css/layout.css';
 import './assets/css/media-queries.css';
@@ -8,6 +8,7 @@ import './assets/css/media-queries.css';
 //import Main from './components/main';
 import Home from './components/home';
 import NotFound from './components/errors/not_found';
+import Jokes from './components/jokes'
 import resume from "./data/resume";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -17,6 +18,8 @@ root.render(
       <Routes>
         {/* <Route path='/' element={<Main />}>    </Route>     */}
           <Route index element={<Home resume={resume} />} />
+          <Route exact path='oskfjhghrh'  element={<Navigate to="/jokes"  replace state={"qr"} />} />
+          <Route path='jokes' element={<Jokes/>}  />  
           <Route path='*' element={<NotFound />}/>        
       </Routes>
     </BrowserRouter>

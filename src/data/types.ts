@@ -110,3 +110,9 @@ export type Resume = {
   publications: ResumePublication[];
   skills: ResumeSkill[];
 };
+
+export type Joke = {
+  question: string;
+  anwser: string;
+  category: string;
+};
