@@ -6,7 +6,7 @@ type WrapperProps = {
 
 const Header: FC<WrapperProps> = ({ children }) => {
     const [screenSize, setScreenSize] = useState({
-        height: 0,
+        height: 800,
         width: 0
     });
 
