@@ -121,6 +121,66 @@ const jokes : Joke[] =
             question: "How does a wife keep her husband happy?",
             anwser: "A splash of affection and a twist of understanding – just like a good whiskey.",
             category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "What's the favorite cocktail of the IT department?",
+            anwser: "Ctrl + Alt + Del-icious.",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "What's a project manager's favorite drink?",
+            anwser: "A Gantt and Tonic – because everything's better with a timeline.",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "What do you call a team-building event at the brewery?",
+            anwser: "A "beerstorming" session.",
+            category: "M1,W1,X1,X2"
+        },
+        {
+            question: "Why did the programmer bring a bottle of whiskey to the coding session?",
+            anwser: "For some \"high-level debugging.\"",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "How does the boss unwind after a stressful day?",
+            anwser: "With a \"bottoms up\" approach to problem-solving.",
+            category: "M1,W1,X1,W2,G2,X2"
+        },
+        {
+            question: "Why did the office janitor love the end-of-year party?",
+            anwser: "It was the only time they got to clean up without judgment.",
+            category: "M1,W1,X1,W2,G2,X2"
+        },
+        {
+            question: "How does a husband describe his love for whiskey?",
+            anwser: "\"It's like a good marriage – complex, full of character, and always there to warm you up.\"",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "How does an accountant celebrate success?",
+            anwser: "With a balanced whiskey and a well-aged spreadsheet.",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "Why did the workaholic refuse to go to the bar?",
+            anwser: "They were afraid of having too many \"proofs.\"",
+            category: "M1,W1,X1,W2,G2,X2"
+        },
+        {
+            question: "How do you know it's a Friday at the office?",
+            anwser: "The coffee machine starts brewing something a bit stronger.",
+            category: "M1,W1,X1,W2,G2,X2"
+        },
+        {
+            question: "Why did the husband compare himself to a fine whiskey?",
+            anwser: "\"Because I get better with time\"",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "What did the husband say when his wife asked if he had a favorite whiskey?",
+            anwser: "\"Darling, you're my favorite; whiskey is just a close second.\"",
+            category: "M1,W1,X1,W2,X2"
         }
     ];
 
