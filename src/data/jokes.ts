@@ -13,7 +13,7 @@ const jokes : Joke[] =
             category: "M1,W1,X1,W2,X2"
         },
         {
-            question: "How do computers stay cool during a whiskey night?",
+            question: "How do computers stay cool during a night?",
             anwser: "They open Windows.",
             category: "M1,W1,X1,X2"
         },
@@ -40,7 +40,7 @@ const jokes : Joke[] =
         {
             question: "What do husbands and whiskey have in common?",
             anwser: "They both need time to mature, but at least whiskey has an expiration date.",
-            category: "M1,W1,X1,W2,X2"
+            category: "W1,X1,W2,X2"
         },
         {
             question: "My husband says he's like fine whiskey – getting better with age.",
@@ -60,17 +60,17 @@ const jokes : Joke[] =
         {
             question: "What did the wife say when her husband claimed he was a whiskey expert?",
             anwser: "\"If only you were as good at fixing the sink.\"",
-            category: "M1,W1,X1,W2,X2"
+            category: "W1,X1,W2,X2"
         },
         {
             question: "What's a wife's response when her friends ask about her husband's whiskey hobby?",
             anwser: "\"It's his way of collecting memories – in a bottle.\"",
-            category: "M1,W1,X1,W2,X2"
+            category: "W1,X1,W2,X2"
         },
         {
             question: "Why did the wife ask for gin when she saw her husband fixing things?",
             anwser: "She needed a sip of patience while watching the handyman in action.",
-            category: "M1,W1,X1,G2,X2"
+            category: "W1,X1,G2,X2"
         },
         {
             question: "How does whiskey and gin resolve a disagreement?",
@@ -125,12 +125,12 @@ const jokes : Joke[] =
         {
             question: "What's the favorite cocktail of the IT department?",
             anwser: "Ctrl + Alt + Del-icious.",
-            category: "M1,W1,X1,W2,X2"
+            category: "M1,W1,X1,W2,G2,X2"
         },
         {
             question: "What's a project manager's favorite drink?",
             anwser: "A Gantt and Tonic – because everything's better with a timeline.",
-            category: "M1,W1,X1,W2,X2"
+            category: "M1,W1,X1,G2,X2"
         },
         {
             question: "What do you call a team-building event at the brewery?",
@@ -165,16 +165,16 @@ const jokes : Joke[] =
         {
             question: "Why did the workaholic refuse to go to the bar?",
             anwser: "They were afraid of having too many \"proofs.\"",
-            category: "M1,W1,X1,W2,G2,X2"
+            category: "M1,W1,X1,X2"
         },
         {
             question: "How do you know it's a Friday at the office?",
             anwser: "The coffee machine starts brewing something a bit stronger.",
-            category: "M1,W1,X1,W2,G2,X2"
+            category: "M1,W1,X1,X2"
         },
         {
-            question: "Why did the husband compare himself to a fine whiskey?",
-            anwser: "\"Because I get better with time\"",
+            question: "How the husband compare himself to a fine whiskey?",
+            anwser: "\"I get better with time\"",
             category: "M1,W1,X1,W2,X2"
         },
         {
