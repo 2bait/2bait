@@ -181,6 +181,36 @@ const jokes : Joke[] =
             question: "What did the husband say when his wife asked if he had a favorite whiskey?",
             anwser: "\"Darling, you're my favorite; whiskey is just a close second.\"",
             category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "A camel can work 10 days without drinking,",
+            anwser: "I can drink 10 days without working.",
+            category: "M1,X1,X2"
+        },
+        {
+            question: "I only drink on days beginning with “T”. ",
+            anwser: "Tuesday, Thursday, today and tomorrow.",
+            category: "M1,X1,X2"
+        },
+        {
+            question: "A ghost walks into a bar and asks for a whiskey.",
+            anwser: "The bartender said “Sorry sir, we don’t serve spirits here!”",
+            category: "M1,W1,X1,W2,X2"
+        },
+        {
+            question: "I love water -",
+            anwser: "especially when it’s frozen in cubes and surrounded by gin.",
+            category: "M1,W1,X1,G2,X2"
+        },
+        {
+            question: "There’s a place and a time for gin.",
+            anwser: "My mouth and now.",
+            category: "M1,W1,X1,G2,X2"
+        },
+        {
+            question: "Why do jazz musicians drink gin straight?",
+            anwser: "Because they can never find the tonic.",
+            category: "M1,W1,X1,G2,X2"
         }
     ];
 
