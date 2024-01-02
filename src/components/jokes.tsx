@@ -17,6 +17,13 @@ const Jokes: FC<WrapperProps> = () => {
     const [selectedSex, setSelectedSex] = useState<string | null>(null);
     const [selectedDrink, setSelectedDrink] = useState<string | null>(null);
 
+    const shuffle = <T,>(array: T[]):T[] => {
+        for (let i = array.length - 1; i > 0; i--){
+            const j = Math.floor(Math.random() * (i+1));
+            [array[i],array[j]] = [array[j],array[i]];
+        }
+        return array;
+    }
     const getSelectedSex = (key: string | null) => {
         switch (key) {
             case 'M1':
@@ -50,9 +57,9 @@ const Jokes: FC<WrapperProps> = () => {
     useEffect(() => {
         const filterJoke = jokes.filter(f => f.category.match(selectedSex ?? "")).filter(f => f.category.match(selectedDrink ?? ""));
         
-        if (filterJoke.length > 0) {
+        if (filterJoke.length > 0) {            
             const randomNumber = Math.floor(Math.random() * filterJoke.length);
-            setSelectedJoke(filterJoke[randomNumber]);
+            setSelectedJoke(shuffle(filterJoke)[randomNumber]);
         }
         else setSelectedJoke(null);
 

@@ -134,7 +134,7 @@ const jokes : Joke[] =
         },
         {
             question: "What do you call a team-building event at the brewery?",
-            anwser: "A "beerstorming" session.",
+            anwser: "A \"beerstorming\" session.",
             category: "M1,W1,X1,X2"
         },
         {
