@@ -5,7 +5,7 @@ const publications: ResumePublication[] = [
     title:
       "Human Tasks in Executable Business Processes based on WS-BPEL Extension for People",
     titleHref:
-      "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=72843",
+      "https://repozitorij.uni-lj.si/IzpisGradiva.php?id=73007",
     description: "2015 | Bachelor's Thesis",
     body: [
       {

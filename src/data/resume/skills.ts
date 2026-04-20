@@ -3,15 +3,7 @@ import { ResumeSkill } from "../types";
 const skills: ResumeSkill[] = [
     {
         "title": "Industry Knowledge",
-        "description": [            
-            {
-                type: "paragraph",
-                items: [
-                    "In-depth knowledge in digitalization of all processes in manufacturing companies.",                    
-                    "",
-                ],
-            }
-        ],
+        "description": "In-depth knowledge in digitalization of all processes in manufacturing companies.",
         "skillDetails": [
             {
                 "name": "Digital Transformation",
@@ -44,7 +36,7 @@ const skills: ResumeSkill[] = [
                 "keywords": []
             },{
                 "name": "Infor M3",
-                "level": "80",
+                "level": "100",
                 "keywords": []
             },{
                 "name": "Odoo",
@@ -106,16 +98,7 @@ const skills: ResumeSkill[] = [
         ]
     }, {
         "title": "I code in",
-        "description": [
-            {
-                type: "paragraph",
-                items: [
-                    "Worked primarily with C#, Delphi, JavaScript, with frameworks such as .NET Core, Express.js, React.js.",
-                    
-                    "Interested in functional programming and serverless architectures.",
-                ],
-            }
-        ],
+        "description": "Worked primarily with C#, Delphi, JavaScript, with frameworks such as .NET Core, Express.js, React.js. Interested in functional programming and serverless architectures.",
         "skillDetails": [
             {
                 "name": "C# (16 years)",
@@ -165,14 +148,7 @@ const skills: ResumeSkill[] = [
         ]
     }, {
         "title": "I store data in",
-        "description": [
-            {
-                type: "paragraph",
-                items: [
-                    "Experienced in both SQL and NoSQL, having worked in companies making use of MS SQL, Firebird, MongoDB, PostgreSQL."
-                ],
-            }            
-        ],
+        "description": "Experienced in both SQL and NoSQL, having worked in companies making use of MS SQL, Firebird, MongoDB, PostgreSQL.",
         "skillDetails": [
             {
                 "name": "MS SQL (16 years)",
@@ -198,8 +174,7 @@ const skills: ResumeSkill[] = [
         ]
     }, {
         "title":"I control the versions with",
-        "description": [
-        ],
+        "description": "",
         "skillDetails": [{
             "name": "GIT",
             "level": "0",
@@ -215,14 +190,7 @@ const skills: ResumeSkill[] = [
         }]
     },{
         "title":"I write with",
-        "description": [
-            {
-                type: "paragraph",
-                items: [
-                    "When all you have is a hammer, every problem looks like a nail."
-                ],
-            }   
-        ],
+        "description": "",
         "skillDetails": [
             {
                 "name": "VS Code",
@@ -244,8 +212,7 @@ const skills: ResumeSkill[] = [
         ]
     },{
         "title":"Going to cloud with",
-        "description": [
-        ],
+        "description": "",
         "skillDetails": [
             {
                 "name": "Docker",
@@ -272,8 +239,7 @@ const skills: ResumeSkill[] = [
     },
     {
         "title":"To make sure things dont crush, i use",
-        "description": [
-        ],
+        "description": "",
         "skillDetails": [
             {
                 "name": "Elasticsearch",
@@ -294,8 +260,7 @@ const skills: ResumeSkill[] = [
     
     {
         "title":"I talk better with",
-        "description": [
-        ],
+        "description": "",
         "skillDetails": [
             {
                 "name": "CLI",
@@ -331,8 +296,7 @@ const skills: ResumeSkill[] = [
     
     {
         "title": "Other Tools and Software",
-        "description": [
-        ],
+        "description": "",
         "skillDetails": [
               {
                 "name": "RabbitMQ",

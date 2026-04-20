@@ -11,7 +11,11 @@ const experiences: ResumeExperiences[] = [
     highlights: {
       type: "list",
       items: [
-        "Built doner pork chop • Served salmon, cream soft cheese, and brisket • Acted 55% pork chop • Filled burgdoggen &amp; frankfurter strip steak with 90% burger patties and broth",
+        "Advising on ERP, integrations and process optimization.",
+        "Driving digital transformation and change management.",
+        "Staying up-to-date with industry trends and best practices.",        
+        "Identifying and mitigating risks and issues.",
+        "Bridging business–IT communication.",
       ]
     },
   },{
@@ -24,7 +28,10 @@ const experiences: ResumeExperiences[] = [
     highlights: {
       type: "list",
       items: [
-        "Built doner pork chop • Served salmon, cream soft cheese, and brisket • Acted 55% pork chop • Filled burgdoggen &amp; frankfurter strip steak with 90% burger patties and broth",
+        "Building strong relationships with clients and partners.",
+        "Ensuring high-quality deliverables and client satisfaction.",
+        "Leading projects and teams.",
+        "Mentoring junior interns.",
       ]
     },
   },
@@ -38,8 +45,13 @@ const experiences: ResumeExperiences[] = [
     highlights: {
       type: "list",
       items: [
-        "Cooked shrimps for 2 to 3 minutes per side, or until opaque then, transfered to a serving dish with limon",
-        "Roasted a pig, turning frequently, until meat reached 160°F in the thickest part of the shoulder or thigh",
+        "Designing solution architectures.",
+        "Developing and implementing software solutions.",
+        "Collaborating with cross-functional teams.",
+        "Continuous improvement of development processes and methodologies.",
+        "Participating in the full software development lifecycle, from requirements gathering to deployment and maintenance.",
+        "Staying up-to-date with emerging technologies and industry trends to ensure the company remains competitive and innovative."
+    
       ]
     },
   },
@@ -53,9 +65,7 @@ const experiences: ResumeExperiences[] = [
     highlights: {
       type: "list",
       items: [
-        "Made stockfish, which is unsalted fish, usully cod, dried by cold air and wind on wooden racks on the foreshore",
-        "Preserved meat without salt by removing fat, cutting it into very thin strips and drying it in the sun or by a fire.",
-      ]
+       ]
     },
   }
 ];

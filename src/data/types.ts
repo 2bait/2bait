@@ -29,9 +29,9 @@ export type Location = {
   region: string;
 };
 
-export type Profile = {
+export type SocialProfile = {
   network: string;
-  username: string;
+  display: string;
   url: string;
 };
 
@@ -48,7 +48,7 @@ export type ResumeAbout = {
   website: string;
   summary: BulletPoints;
   location: Location;
-  profiles: Profile[];
+  social: SocialProfile[];
 };
 
 export type ResumeExperiences = {
@@ -88,7 +88,7 @@ export type ResumeSkillDetail = {
 
 export type ResumeSkill = {
   title: string;
-  description: Renderable[]
+  description: string,
   skillDetails: ResumeSkillDetail[];
 };
 

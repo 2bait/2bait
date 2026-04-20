@@ -12,10 +12,11 @@ const about: ResumeAbout = {
   phone: "+386 40 415 656",
   website: "https://www.2bait.si",
   summary: [
-    "Hi, my name is Borut Ajdič I'm a Creative / Full Stack Developer from Slovenia. Over the years I developed strong creative and problem solving skills set in a range of technologies, management and communication.",
-    "Where I really value mutual trust, respect, mutually beneficial, high-quality and long-lasting solutions. Specialized in digital transformation of manufacturing processes and familiar with several widely recognized ERP solutions.",
-    "Also I'm very passionate about artificial intelligence and machine learning.",
-    "And last but not least, I am the proud father of daughter and son. I enjoy playing piano, guitar and I'm a little bit of a geek in self-improvement."
+    "Hi, I'm Borut Ajdič, a Creative and Full Stack Developer based in Slovenia.",
+    "I bring a strong blend of creativity and technical expertise, with proven experience across a wide range of technologies, as well as in management and communication. Over the years, I’ve developed a problem-solving mindset focused on delivering efficient, scalable, and high-quality solutions.",
+    "I specialize in the digital transformation of manufacturing processes and have hands-on experience with several widely recognized ERP systems. I’m particularly driven by building solutions that are not only technically sound but also create long-term value through trust, collaboration, and mutual benefit.",
+    "I have a strong interest in artificial intelligence and machine learning, and I continuously explore ways to apply these technologies in real-world scenarios.",
+    "Outside of work, I’m a proud father of a daughter and a son, a music enthusiast who enjoys playing the piano and guitar, and a lifelong learner with a passion for self-improvement."
   ],
   location: {
     address: "Rimska cesta 19E",
@@ -24,17 +25,17 @@ const about: ResumeAbout = {
     countryCode: "Slovenia",
     region: "Dolenjska"
   },
-  profiles: [{
+  social: [{
     network: "Github",
-    username: "borutajdic",
+    display: "github.com/2bait",
     url: "https://github.com/2bait",
   },{
     network: "Email",
-    username: "borutajdic",
+    display: "borut.ajdic@gmail.com",
     url: "mailto:borut.ajdic@gmail.com",
   },{
     network: "LinkedIn",
-    username: "borutajdic",
+    display: "borutajdic",
     url: "https://www.linkedin.com/in/borutajdic"
   }]
 };
