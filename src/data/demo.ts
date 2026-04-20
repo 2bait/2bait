@@ -8,66 +8,74 @@ const resume: Resume = {
     firstName: "Borut",
     middleName: "",
     lastName: "Ajdič",
-    label: "",
+    label: "Senior Front-End Engineer",
     skype: "",
     picture: "",
     email: "borut.ajdic@gmail.com",
     phone: "+386 40 415 656",
     organization: "2bait",
     website: "https://www.2bait.si",
-    summary: [],
+    summary: [
+      "15+ years building accessible, responsive web applications with React and TypeScript.",
+      "Strong collaborator with experience in design systems, performance tuning and developer workflows.",
+      "Delivered polished user experiences for SaaS, publishing and enterprise products."
+    ],
     location: {
-      address: "",
-      postalCode: "",
-      city: "",
-      countryCode: "",
-      region: ""
+      address: "Trg republike 3",
+      postalCode: "1000",
+      city: "Ljubljana",
+      countryCode: "SI",
+      region: "Slovenia"
     },
-    profiles: [
+    social: [
       {
         network: "Github",
-        username: "borutajdic",
-        url: "",
-      }, {
+        display: "borutajdic",
+        url: "https://github.com/borutajdic",
+      },
+      {
         network: "Email",
-        username: "borutajdic",
+        display: "borut.ajdic@gmail.com",
         url: "mailto:borut.ajdic@gmail.com",
-      }, {
+      },
+      {
         network: "LinkedIn",
-        username: "borutajdic",
-        url: ""
+        display: "borut-ajdic",
+        url: "https://linkedin.com/in/borut-ajdic",
       }
     ]
   },
 
   experiences: [
     {
-      company: "WebPraktikos Inc.",
-      position: "Web Developer",
-      website: "",
-      startDate: "Jun 2018",
+      company: "2bait",
+      position: "Senior Front-End Engineer",
+      website: "https://www.2bait.si",
+      startDate: "Aug 2020",
       endDate: "Present",
-      summary: "",
-      highlights: {
-        type: "list",
-        items:
-          [
-            "Built doner pork chop • Served salmon, cream soft cheese, and brisket • Acted 55% pork chop • Filled burgdoggen &amp; frankfurter strip steak with 90% burger patties and broth",
-          ]
-      },
-    },
-    {
-      company: "Mammoth GmbH",
-      position: "Android Developer",
-      website: "",
-      startDate: "Feb 2017",
-      endDate: "Apr 2018",
-      summary: "",
+      summary: "Leading frontend architecture and design systems for customer-facing applications.",
       highlights: {
         type: "list",
         items: [
-          "Cooked shrimps for 2 to 3 minutes per side, or until opaque then, transfered to a serving dish with limon",
-          "Roasted a pig, turning frequently, until meat reached 160°F in the thickest part of the shoulder or thigh",
+          "Architected a reusable React component library that reduced launch time for new products by 30%.",
+          "Improved site performance by 40% through code splitting, image optimization and caching improvements.",
+          "Mentored junior engineers and introduced accessibility audits across the frontend team."
+        ]
+      },
+    },
+    {
+      company: "WebPraktikos Inc.",
+      position: "Front-End Developer",
+      website: "https://www.webpraktikos.com",
+      startDate: "Jun 2018",
+      endDate: "Jul 2020",
+      summary: "Built responsive marketing sites and interactive dashboards for startup and agency clients.",
+      highlights: {
+        type: "list",
+        items: [
+          "Delivered pixel-perfect UIs with modern CSS layout techniques and animation patterns.",
+          "Integrated REST and GraphQL APIs into performant single-page applications.",
+          "Created reusable UI utilities that reduced duplicated work across projects."
         ]
       },
     },
@@ -77,12 +85,12 @@ const resume: Resume = {
       website: "",
       startDate: "May 2015",
       endDate: "Dec 2016",
-      summary: "",
+      summary: "Managed quality assurance for web and mobile software releases.",
       highlights: {
         type: "list",
         items: [
-          "Made stockfish, which is unsalted fish, usully cod, dried by cold air and wind on wooden racks on the foreshore",
-          "Preserved meat without salt by removing fat, cutting it into very thin strips and drying it in the sun or by a fire.",
+          "Designed test plans and coordinated regression testing across development teams.",
+          "Improved release quality with automated acceptance checks and usability reviews."
         ]
       },
     }
@@ -92,13 +100,15 @@ const resume: Resume = {
     {
       institution: "Ozyegin University",
       area: "Bachelor's in Computer Science",
-      studyType: "",
-      gpa: "",
+      studyType: "Full-time",
+      gpa: "3.27 / 4.0",
       startDate: "Sep 2011",
       endDate: "Jun 2015",
-      summary: "",
+      summary: "Focused on software engineering, web technologies and interactive systems.",
       courses: [
-        "100% scholarship received from significant achievement obtained on Computer Games Workshop 3, and graduated with a GPA of 3.27 on a 4.0 scale and an honor certificate",
+        "Algorithm design and data structures",
+        "Web development and user interfaces",
+        "Software quality assurance and testing"
       ],
     }
   ],
@@ -107,93 +117,63 @@ const resume: Resume = {
     {
       title: "Universal Resume",
       titleHref: "https://github.com/WebPraktikos/universal-resume",
-      description: "Since 2019 | HTML CSS",
+      description: "A clean, customizable resume generator built with HTML and CSS.",
       body: [
         {
           type: "paragraph",
           items: [
-            "Good design is as little design as possible. Less, but better — because it concentrates on the essential aspects, and the products are not burdened with non-essentials.",
+            "An open-source resume template focused on readability, responsive layout and easy customization."
           ],
-        },
+        }
       ],
     },
     {
       title: "tailwindcss-rich-docs",
       titleHref: "https://github.com/WebPraktikos/tailwindcss-rich-docs",
-      description: "2017 | JavaScript",
+      description: "Documentation site generator using Tailwind CSS.",
       body: [
         {
           type: "paragraph",
           items: [
-            "Good design is long-lasting. It avoids being fashionable and therefore never appears antiquated.",
-            { type: "newline" },
-            "Good design is honest. It does not make a product more innovative, powerful or valuable than it really is.",
+            "Created a maintainable docs experience with searchable content, rich layout support and responsive design."
           ],
-        },
+        }
       ],
-    },
-    {
-      title: "Third One",
-      description: "2013 - 2014 | Vue",
-      body: [
-        {
-          type: "paragraph",
-          items: [
-            "Good design is innovative. Technological development is always offering new opportunities for innovative design.",
-          ],
-        },
-      ],
-    },
-    {
-      title: "Fantastic Project",
-      description: "2012 | JavaScript",
-      body: [
-        {
-          type: "paragraph",
-          items: [
-            "Strip steak tail capicola alcatra ground round tenderloin ar. Venison tri-tip porchetta, brisket tenderloin pig beef.",
-          ],
-        },
-      ],
-    },
+    }
   ],
+
   publications: [],
+
   skills: [
     {
-      "title": "<DESCRIPTION_TITLE>",
-      "description": [
-        "<DESCRIPTION_1>",
-        "<DESCRIPTION_2>",
-        "<DESCRIPTION_3>"
-      ],
-      "skillDetails": [
+      title: "Front-End Engineering",
+      description: "Building performant, accessible web interfaces with modern JavaScript frameworks.",
+      skillDetails: [
         {
-          "name": "<SKILL_NAME>",
-          "level": "<SKILL_LEVEL>",
-          "keywords": [
-            "<KEYWORD_1>",
-            "<KEYWORD_2>",
-            "<KEYWORD_3>"
-          ]
+          name: "React",
+          level: "Expert",
+          keywords: ["TypeScript", "Hooks", "Context", "Suspense"]
+        },
+        {
+          name: "HTML & CSS",
+          level: "Expert",
+          keywords: ["Flexbox", "Grid", "Responsive design", "Animations"]
         }
       ]
     },
     {
-      "title": "<DESCRIPTION_TITLE>",
-      "description": [
-        "<DESCRIPTION_1>",
-        "<DESCRIPTION_2>",
-        "<DESCRIPTION_3>"
-      ],
-      "skillDetails": [
+      title: "Tooling & Collaboration",
+      description: "Improving developer workflows and delivering high-quality products.",
+      skillDetails: [
         {
-          "name": "<SKILL_NAME>",
-          "level": "<SKILL_LEVEL>",
-          "keywords": [
-            "<KEYWORD_1>",
-            "<KEYWORD_2>",
-            "<KEYWORD_3>"
-          ]
+          name: "Tooling",
+          level: "Advanced",
+          keywords: ["Webpack", "Vite", "ESLint", "Prettier"]
+        },
+        {
+          name: "Collaboration",
+          level: "Advanced",
+          keywords: ["Agile", "Code reviews", "Pair programming", "Design systems"]
         }
       ]
     }
