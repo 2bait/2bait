@@ -1,0 +1,5 @@
+[build]
+  command = "npm run build"
+  publish = ".netlify/functions" # the plugin manages publish for you; keep defaults if you prefer plugin docs
+[[plugins]]
+  package = "@netlify/plugin-nextjs"
