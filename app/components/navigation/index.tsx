@@ -1,8 +1,9 @@
 'use client'
 import useDarkMode from "@/src/useDarkMode";
 import React, { FC, useEffect, useState } from "react";
+
 import NavigationLink from "./navigation_link";
-import { usePathname } from 'next/navigation'
+//import { usePathname } from 'next/navigation'
 import { FaBars, FaXmark } from "react-icons/fa6";
 
 
@@ -18,7 +19,7 @@ export default function Navigation({ navigation }: NavigationProps) {
     //     setNavigationOpen((navigationOpen) => !navigationOpen);
     // };
 
-    const [visibleSection, setVisibleSection] = useState("home");
+    const [visibleSection, setVisibleSection] = useState("welcome");
     const [isOpen, setOpen] = useState(false);
     const { isDarkMode, toggleDarkMode, resetToSystem } = useDarkMode();
 
@@ -59,9 +60,10 @@ export default function Navigation({ navigation }: NavigationProps) {
                     return (
                         <NavigationLink
                             key={index}
-                            link={`#${key}`}
+                            link={`${key}`}
                             name={navigationName}
                             isSelected={visibleSection === key}
+                            onClick={() => { setVisibleSection(key); setOpen(false); }}
                         />
                     );
                 })}
@@ -75,10 +77,10 @@ export default function Navigation({ navigation }: NavigationProps) {
                     <span id="themeMode">Mode</span>
                 </button>
             </nav>
-                <button id="mobile-toggle" onClick={() => setOpen(!isOpen)}>
-                    
-                    {isOpen ? <FaXmark /> : <FaBars />}
-                </button>
+            <button id="mobile-toggle" onClick={() => setOpen(!isOpen)}>
+
+                {isOpen ? <FaXmark /> : <FaBars />}
+            </button>
         </>
     );
 };

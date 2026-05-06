@@ -1,19 +1,18 @@
 'use client'
-import Link from 'next/link'
-import { usePathname } from 'next/navigation'
 
 type LinkProps = {
     link: string;
     name: string;
     isSelected?: boolean;
+    onClick?: () => void;
 };
 
-export default function NavigationLink({ link, name, isSelected }:LinkProps)  {
+export default function NavigationLink({ link, name, isSelected, onClick }:LinkProps)  {
     
   //TODO: add active state based on scroll position over section
     return (
-              <Link  href={link} scroll ={ true } className={`nav-link ${(isSelected) ? "nav-link-active" : ""}`}  transitionTypes={['slide-in']}  >
+              <a href={`#${link}`} className={`nav-link ${(isSelected) ? "nav-link-active" : ""}`} onClick={onClick}>
                 {name}
-             </Link>
+             </a>
     )
 };
