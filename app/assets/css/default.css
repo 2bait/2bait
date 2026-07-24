@@ -122,8 +122,7 @@
    */
  }
 
- @media (prefers-color-scheme: dark) {
-   :root {
+ :root.dark {
      --bg: #0f1115;
 
      /* cards, sections */
@@ -179,7 +178,6 @@
      --ribbon-expert-text: #ffe9b3;
      --ribbon-expert-border: rgba(255, 180, 0, 0.55);
 
-   }
  }
 
  *,
@@ -338,10 +336,8 @@
    color: var(--text-muted);
  }
 
- @media (prefers-color-scheme: dark) {
-   .theme-toggle {
-     background: var(--bg);
-   }
+ .dark .theme-toggle {
+   background: var(--bg);
  }
 
  .theme-toggle span {
@@ -358,16 +354,20 @@
    margin: 0 auto;
    padding: var(--s6) 5vw var(--s7);
  }
+
  .page-main {
    padding-inline: var(--s4);
  }
+
  .section {
 
    padding: var(--s7) 0 var(--s6);
  }
+
  .section {
    padding: var(--s6) 0 var(--s5);
  }
+
  .section:last-of-type {
    border-bottom: none;
  }
@@ -463,57 +463,97 @@
    gap: var(--s3);
  }
 
+ /* HERO RIGHT – GLASS PANEL P1 */
+
+ /*.hero-right {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+ }*/
+
  .hero-orbit {
-   position: relative;
+   aspect-ratio: 4 / 5;
+   border-radius: 1.8rem;
+   box-shadow: 0 12px 32px rgba(15, 23, 42, 0.10);
+
+   /*position: relative;
    width: 100%;
    aspect-ratio: 4 / 5;
    border-radius: 1.8rem;
-   background: radial-gradient(circle at 40% 0, #38bdf8 0, #020617 45%);
    overflow: hidden;
-   border: 1px solid rgba(148, 163, 184, 0.4);
-   box-shadow: 0 0 40px rgba(15, 23, 42, 0.9);
- }
+   border: 1px solid var(--border-light);*/
+  }
 
  .hero-orbit::before {
-   content: "";
+   /*content: "";
    position: absolute;
    inset: 10%;
    border-radius: 20%;
-   /* border: 1px dashed rgba(148, 163, 184, 0.4); */
-   box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);
+    border: 1px dashed rgba(148, 163, 184, 0.4); 
+   box-shadow: 0 0 40px rgba(56, 189, 248, 0.4);*/
  }
 
  .hero-orbit::after {
-   content: "";
+   /*content: "";
    position: absolute;
    inset: 26%;
    border-radius: 50%;
-   /* border: 1px dashed rgba(148, 163, 184, 0.3); */
+   border: 1px dashed rgba(148, 163, 184, 0.3); */
  }
 
  .hero-avatar {
    position: absolute;
    inset: 29%;
    border-radius: 1.4rem;
+   background: #eef4ff;
+   padding: 28px;
+   text-align: center;
+   box-shadow: inset 0 0 0 1px rgba(37, 99, 235, 0.08);
+   /*
+   position: absolute;
+   inset: 29%;
+   border-radius: 1.4rem;
    background: linear-gradient(145deg, #020617, #111827);
+   background: #eef4ff;
    border: 1px solid rgba(148, 163, 184, 0.6);
    display: grid;
    align-items: center;
    justify-content: center;
-   color: #f5f7fa;
+   color: #0f172a;
    font-size: 0.85rem;
    text-align: center;
-   padding: 1rem;
+   padding: 1rem;*/
  }
 
  .hero-avatar span {
    font-size: 0.8rem;
    text-transform: uppercase;
-   color: #38bdf8;
+   color: #2563eb;
  }
 
+ .dark .hero-orbit {
+   background: radial-gradient(circle at 50% 0, #38bdf8 0, #020617 45%);
+   border: 1px solid rgba(255, 255, 255, 0.16);
+   box-shadow: 0 0 40px rgba(0, 0, 0, 0.55);
+   overflow: hidden;
+ }
+
+ .dark .hero-avatar {
+   background: linear-gradient(145deg, #020617, #111827);
+   border-color: rgba(148, 163, 184, 0.6);
+   color: #f5f7fa;
+ }
+
+ .dark .hero-pill,
+ .dark .hero-badge {
+   background: rgba(15, 23, 42, 0.9);
+   border-color: rgba(148, 163, 184, 0.6);
+ }
+
+ 
+
  .hero-pill {
-   position: absolute;
+   /* position: absolute;
    right: 10%;
    top: 18%;
    padding: 0.4rem 0.8rem;
@@ -521,29 +561,36 @@
    font-size: 0.7rem;
    text-transform: uppercase;
    letter-spacing: 0.12em;
-   background: rgba(15, 23, 42, 0.9);
+  background: #ffffff;
+   background: var(--banner-bg)
    border: 1px solid rgba(56, 189, 248, 0.7);
    box-shadow: var(--shadow-neon);
-   color: var(--text-muted);
+   color: #0f172a;
+  background: #ffffff;*/
  }
 
  .hero-pill span {
-   color: #38bdf8;
+   /*color: #2563eb;*/
  }
 
  .hero-badge {
-   position: absolute;
+   /*position: absolute;
    left: 8%;
    bottom: 12%;
    padding: 0.6rem 0.9rem;
    border-radius: 1rem;
    font-size: 0.75rem;
-   background: rgba(15, 23, 42, 0.9);
+  background: #ffffff;
+   background: rgba(15, 23, 42, 0.9)
    border: 1px solid rgba(148, 163, 184, 0.6);
    display: grid;
    gap: 0.15rem;
-   color: #38bdf8;
-   text-transform: uppercase;
+   color: #0f172a;
+   text-transform: uppercase;;*/
+ }
+
+ .hero-badge span {
+   /*color: #2563eb;*/
  }
 
  .hero-badge strong {
@@ -585,12 +632,6 @@
    background: var(--btn-secondary-hover);
  }
 
- /* HERO RIGHT – GLASS PANEL P1 */
-
- .hero-right {
-   display: flex;
-   justify-content: flex-end;
- }
 
  .glass-panel {
    width: 100%;
@@ -603,11 +644,9 @@
    backdrop-filter: blur(22px);
  }
 
- @media (prefers-color-scheme: dark) {
-   .glass-panel {
-     background: rgba(22, 26, 35, 0.6);
-     border-color: rgba(255, 255, 255, 0.16);
-   }
+ .dark .glass-panel {
+   background: rgba(22, 26, 35, 0.6);
+   border-color: rgba(255, 255, 255, 0.16);
  }
 
  .glass-panel.strong {
@@ -738,10 +777,8 @@
    font-size: var(--fs-small);
  }
 
- @media (prefers-color-scheme: dark) {
-   .ribbon {
-     border-color: var(--border-light);
-   }
+ .dark .ribbon {
+   border-color: var(--border-light);
  }
 
  .ribbon-label {
@@ -893,9 +930,11 @@
    gap: var(--s4);
    margin-bottom: var(--s4);
  }
+
  .form-row {
    grid-template-columns: minmax(0, 1fr);
  }
+
  .form-field {
    display: flex;
    flex-direction: column;

@@ -1,51 +1,50 @@
 import { useState, useEffect } from 'react';
 
+const STORAGE_KEY = 'theme';
+
+function getStoredPreference(): 'dark' | 'light' | null {
+  const stored = localStorage.getItem(STORAGE_KEY);
+  return stored === 'dark' || stored === 'light' ? stored : null;
+}
+
+function resolveInitialTheme(): boolean {
+  const stored = getStoredPreference();
+  if (stored) return stored === 'dark';
+  return window.matchMedia('(prefers-color-scheme: dark)').matches;
+}
+
 function useDarkMode() {
   const [isDarkMode, setIsDarkMode] = useState(false);
 
-
-  const [isManual, setIsManual] = useState(false);
-
   useEffect(() => {
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+    setIsDarkMode(resolveInitialTheme());
 
-    // Function to handle system theme changes
+    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
     const handleSystemChange = (event: MediaQueryListEvent) => {
-      //if (!isManual) {
-      setIsDarkMode(event.matches);
-      //}
+      if (!getStoredPreference()) {
+        setIsDarkMode(event.matches);
+      }
     };
 
-    // Set initial theme based on system preference
-    setIsDarkMode(mediaQuery.matches);
-
-    // Listen for system changes
     mediaQuery.addEventListener('change', handleSystemChange);
-
-    // Cleanup event listener on unmount
     return () => mediaQuery.removeEventListener('change', handleSystemChange);
-  }, [isManual]);
+  }, []);
 
-    useEffect(() => {
-        if (isDarkMode) {
-            document.body.classList.add('dark');
-        } else {
-            document.body.classList.remove('dark');
-        }
-    }, [isDarkMode]);
+  useEffect(() => {
+    document.documentElement.classList.toggle('dark', isDarkMode);
+  }, [isDarkMode]);
 
-  // Toggle manual control
   const toggleDarkMode = () => {
-    console.log("toggleDarkMode")
-    //setIsManual(true);  
-    setIsDarkMode((prev) => !prev);
+    setIsDarkMode((prev) => {
+      const next = !prev;
+      localStorage.setItem(STORAGE_KEY, next ? 'dark' : 'light');
+      return next;
+    });
   };
 
-  // Reset to system preference
   const resetToSystem = () => {
-    //setIsManual(false);
-    const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
-    setIsDarkMode(mediaQuery.matches);
+    localStorage.removeItem(STORAGE_KEY);
+    setIsDarkMode(window.matchMedia('(prefers-color-scheme: dark)').matches);
   };
 
   return { isDarkMode, toggleDarkMode, resetToSystem };

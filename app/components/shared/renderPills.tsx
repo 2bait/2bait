@@ -11,7 +11,7 @@ const RenderPills: FC<RenderPillsProps> = ({ items }) => {
         {items.map((item, i) => (
           <li
             key={i}
-            className="bg-gray-200"
+            className="pill"
           >
             {item}
           </li>
